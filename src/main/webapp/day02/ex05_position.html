@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	section{
+		width: 600px;
+		height: 200px;
+	}
+	section:nth-of-type(1) {background-color: pink;}
+	section:nth-of-type(2) {
+	background-color: lightblue;
+	position: relative;
+	top: -100px;
+	left: 100px;
+	}
+	section:nth-of-type(3) {background-color: yellow;}
+</style>
+</head>
+<body>
+<!--  
+	position은 위치 지정하는 속성
+	- static : 기본값, 문서의 흐름에 거스르지 않음, 다른 요소와 겹치지 않게
+			   top, bottom, left, right 속성에 영향을 받지 않는다.
+	- relative : 원래 위치값에 top, bottom, left, right 속성을 이용해서 이동 , 
+	아래 요소는 원래 흐름에 거스르지 않음.
+	(적용된 요소의 현재 위칫값을 기준으로 상대 위치를 지정합니다.)
+	- absolute : 일반적인 문서흐름을 제거하고, 부모 position 기준으로 상대적으로 위치 지정.   
+	만약에 부모 포지션이 없으면 body를 기준으로 함. (절대 위치 좌표 설정이 됨)
+	- fixed : 일반적인 문서흐름을 제거 하고 웹 브라우저를 기준으로 지정한 위치 고정(절대 좌표)
+	- sticky : 일반적인 문서흐름을 제거하고, 스크롤 동작이 존재하는 가장 가까운 요소에 위치 지정
+	자기 자리에 있다가 지정한 값에 걸리면 해당 오브젝트는 고정이 되고 주변만 스크롤이 되다가 
+	스크롤 방향에 의해 다시 자기자리에 걸리면 따라서 움직이다가 다시 지정한 값에 걸리면 해당 오브젝트는 고정.  
+-->
+	<section></section>
+	<section></section>
+	<p>한국 ICT 인재개발원</p>
+	<section></section>
+
+</body>
+</html>

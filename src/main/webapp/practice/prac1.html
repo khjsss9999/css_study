@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃 과제 1</title>
+<style type="text/css">
+*{
+	margin: 0px auto; padding: 0px; 
+	text-align: center; color: black;
+	font-size: 30px;
+}
+.cen {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.cen .side {
+	width: 300px;
+	height: 600px;
+	background-color: lightblue;
+	float: left;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.cen .main {
+	width: 900px;
+	height: 600px;
+	background-color: #fff; 
+	float: left;
+	border-right: 2px solid black;
+	box-sizing: border-box;
+	display: flex;
+  	align-items: center;
+}
+	
+
+
+
+
+.cen::after {
+	content: ''; 
+	display: block; 
+	clear: both; 
+}
+.header{
+	background-color: gray;
+	width: 1200px;
+	height: 120px;
+	border: 2px solid black;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.futer {
+	background-color: gray;
+	width: 1200px; 
+	height: 100px;
+	border: 2px solid black;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+</style>
+</head>
+<body>
+	<div class="header">
+		<p>헤더</p>
+	</div>
+	<div class="cen">
+		<section class="side"><p>사이드 바</p></section>
+		<section class="main"><p>본문</p></section>
+	</div>
+	<div class="futer">
+		<p>푸터</p>
+	</div>
+</body>
+</html>
